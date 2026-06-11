@@ -1,3 +1,9 @@
+const correctPassword = "2377"; 
+let input = prompt("Enter Password:");
+if (input !== correctPassword) {
+    alert("Wrong Password!");
+    document.body.innerHTML = "Access Denied";
+}
 const imageContainer = document.getElementById('gallery');
 let index = 0;
 let loading = false;
@@ -11,7 +17,7 @@ let rightArrow;
 
 // Calculate the number of days since the start date
 function calculateLoveDays() {
-    const startDate = new Date('2020-01-01'); // **Love date**
+    const startDate = new Date('2024-10-03'); // **Love date**
     const today = new Date();
     startDate.setHours(0, 0, 0, 0);
     today.setHours(0, 0, 0, 0);
